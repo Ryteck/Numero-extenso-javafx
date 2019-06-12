@@ -1,0 +1,11 @@
+.backcolor{
+	-fx-background-color: #2a2e37;
+}
+
+.texto_white{
+	-fx-text-fill: #ffffff;
+}
+
+a:link, a:visited {
+	-fx-text-fill: #ffffff;
+}

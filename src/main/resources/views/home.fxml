@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" styleClass="backcolor" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <JFXTextField fx:id="inteiro" focusColor="#64fc97" layoutX="25.0" layoutY="14.0" prefHeight="25.0" prefWidth="250.0" styleClass="texto_white" />
+      <JFXButton layoutX="103.0" layoutY="79.0" onAction="#converter" prefHeight="43.0" prefWidth="94.0" ripplerFill="#24ffd2" style="-fx-border-color: #24ffd2; -fx-border-radius: 25; -fx-background-radius: 25;" text="Converter" textFill="WHITE" />
+      <Label fx:id="txtResposta" layoutX="25.0" layoutY="169.0" text="Resposta" textFill="WHITE" />
+   </children>
+</AnchorPane>
