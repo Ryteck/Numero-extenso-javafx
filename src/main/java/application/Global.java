@@ -3,7 +3,7 @@ package application;
 public class Global {
 
     public final static String[] dezena = {
-            "",
+            "DEZ",
             "ONZE",
             "DOZE",
             "TREZE",

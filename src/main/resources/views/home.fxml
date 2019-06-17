@@ -7,8 +7,8 @@
 
 <AnchorPane prefHeight="200.0" prefWidth="300.0" styleClass="backcolor" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
    <children>
-      <JFXTextField fx:id="inteiro" focusColor="#64fc97" layoutX="25.0" layoutY="14.0" prefHeight="25.0" prefWidth="250.0" styleClass="texto_white" />
-      <JFXButton layoutX="103.0" layoutY="79.0" onAction="#converter" prefHeight="43.0" prefWidth="94.0" ripplerFill="#24ffd2" style="-fx-border-color: #24ffd2; -fx-border-radius: 25; -fx-background-radius: 25;" text="Converter" textFill="WHITE" />
-      <Label fx:id="txtResposta" layoutX="25.0" layoutY="169.0" text="Resposta" textFill="WHITE" />
+      <JFXTextField fx:id="inteiro" focusColor="#64fc97" layoutX="25.0" layoutY="14.0" prefHeight="25.0" prefWidth="250.0" styleClass="texto_white" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="14.0" />
+      <JFXButton layoutX="100.0" layoutY="64.0" onAction="#converter" prefHeight="50.0" prefWidth="100.0" ripplerFill="#24ffd2" style="-fx-border-color: #24ffd2; -fx-border-radius: 25; -fx-background-radius: 25;" text="Converter" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="64.0" />
+      <Label fx:id="txtResposta" layoutX="40.0" layoutY="169.0" prefHeight="17.0" prefWidth="220.0" style="-fx-alignment: center;" text="Resposta" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" />
    </children>
 </AnchorPane>

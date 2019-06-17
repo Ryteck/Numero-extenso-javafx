@@ -32,20 +32,32 @@ public class Conversor {
 
     public static String gerarTexto(){
 
+        int loop;
+
+        int corte = tratarCorte();
+
         if (tamanho <= 3){
+            loop = 1;
+        }
+        else{
+            loop = corte;
+        }
 
-            concatMenor3();
+        for (int cont = 0; cont < loop; cont++){
 
-        }else{
+            concat3();
 
-            concatMaior3();
-            concatMenor3();
         }
 
         return resposta;
     }
 
-    private static void concatMenor3(){
+    private static int tratarCorte(){
+
+        return tamanho;
+    }
+
+    private static void concat3(){
 
         if (tamanho >= 3){
 
@@ -88,22 +100,26 @@ public class Conversor {
             }
         }
 
-        if (tamanho >= 1 && Integer.parseInt(num.substring((num.length() - 2), (num.length() - 1))) != 1){
+        if (tamanho == 1){
 
-            if (tamanho > 1 && Integer.parseInt(num.substring((num.length() - 1), (num.length() - 0))) == 0){
+            resposta += alg1[Integer.parseInt(num.substring((num.length() - 1), (num.length() - 0)))];
 
-            }else{
+        }else{
 
-                if (tamanho > 1){ resposta += " E "; }
+            if (tamanho >= 1 && Integer.parseInt(num.substring((num.length() - 2), (num.length() - 1))) != 1){
 
-                resposta += alg1[Integer.parseInt(num.substring((num.length() - 1), (num.length() - 0)))];
+                if (tamanho > 1 && Integer.parseInt(num.substring((num.length() - 1), (num.length() - 0))) == 0){
 
+                }else{
+
+                    if (tamanho > 1){ resposta += " E "; }
+
+                    resposta += alg1[Integer.parseInt(num.substring((num.length() - 1), (num.length() - 0)))];
+
+                }
             }
+
         }
-
-    }
-
-    private static void concatMaior3(){
 
     }
 }

@@ -21,7 +21,7 @@ public class Initializer extends Application {
 
         stage.setTitle("Conversor");
         stage.setScene(scene);
-        stage.setResizable(false);
+        stage.setResizable(true);
         stage.show();
     }
 
