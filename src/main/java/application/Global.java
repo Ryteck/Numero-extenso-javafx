@@ -2,6 +2,11 @@ package application;
 
 public class Global {
 
+    public final static String[] quant = {
+            "ÃO",
+            "ÕES"
+    };
+
     public final static String[] dezena = {
             "DEZ",
             "ONZE",
@@ -56,9 +61,9 @@ public class Global {
 
     public final static String[] algarismos = {
             "MIL",
-            "MILHÂO",
-            "BILHÃO",
-            "TRILHÃO",
-            "QUADRILHÃO"
+            "MILH",
+            "BILH",
+            "TRILH",
+            "QUADRILH"
     };
 }
