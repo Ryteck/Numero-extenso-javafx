@@ -21,6 +21,11 @@ public class Conversor {
     // RESPOSTA FINAL A SER RETORNADA
     private static String resposta = "";
 
+    //NÚMERO DE GRUPOS
+    private static int corte;
+
+    //FUNÇÕES
+
     // CONFIGURA AS VARIAVEIS INICIAIS DO PROJETO
     public static void inicialSetup(String num){
 
@@ -37,7 +42,7 @@ public class Conversor {
     //MÉTODO QUE CORDENA A CONVERSÃO
     public static String gerarTexto(){
 
-        int corte = tratarCorte();
+        corte = tratarCorte();
 
         divNum = new String[corte];
         divResposta = new String[corte];
@@ -47,7 +52,13 @@ public class Conversor {
 
         if (divResposta.length >= 2){ tratarDivResposta(); }
 
-        gerarResposta();
+        if (tamanho == 1) {
+            resposta += divResposta[0];
+        }else{
+            for (int cont = 0; cont < corte; cont++) {
+                if (!"0".equals(divNum[cont])) { resposta += divResposta[cont]; }
+            }
+        }
 
         return resposta;
     }
@@ -67,19 +78,19 @@ public class Conversor {
 
     private static void gerarDivInt(){
 
-        for (int cont = 0; cont < divNum.length; cont++){ divNum[cont] = ""; }
+        for (int cont = 0; cont < corte; cont++){ divNum[cont] = ""; }
 
-        int difereca = divNum.length * 3 - tamanho;
+        int difereca = corte * 3 - tamanho;
         int inicio = 0;
         int fim = 3;
 
-        for (int cont = 0; cont < divNum.length; cont++){
+        for (int cont = 0; cont < corte; cont++){
 
-            if (cont - 1 == divNum.length){
-                fim -= difereca;
+            if (cont == 0){
+                divNum[cont] = num.substring(inicio, fim - difereca);
+            }else{
+                divNum[cont] = num.substring(inicio - difereca, fim - difereca);
             }
-
-            divNum[cont] = num.substring(inicio, fim);
             inicio += 3;
             fim += 3;
         }
@@ -87,11 +98,11 @@ public class Conversor {
 
     private static void gerarDivResposta(){
 
-        for (int cont = 0; cont < divResposta.length; cont++){ divResposta[cont] = ""; }
+        for (int cont = 0; cont < corte; cont++){ divResposta[cont] = ""; }
 
         boolean isMaior = false;
 
-        for (int cont = 0; cont < divResposta.length; cont++){
+        for (int cont = 0; cont < corte; cont++){
             incrementar(isMaior, cont);
             isMaior = true;
         }
@@ -101,49 +112,31 @@ public class Conversor {
 
         boolean isSingular;
 
-        for (int cont = 1; cont < divResposta.length; cont--){
+        for (int cont = 0; cont < corte; cont++){
             if (!"0".equals(divNum[cont])){
-                if (cont == 1){
-                    divResposta[cont] += " " + algarismos[0];
-                }else{
-                    isSingular = ("1".equals(divResposta[cont]));
-                    divResposta[cont] += " " + receberPlural(cont - 1, isSingular);
-                }
+
+                isSingular = ("1".equals(divNum[cont]));
+
+                divResposta[cont] += " " + receberPosicao(corte - cont - 1, isSingular);
+
             }
         }
     }
 
-    private static String receberPlural(int posicao, boolean isSingular){
+    private static String receberPosicao(int posicao, boolean isSingular){
         String aaa = "";
 
-        aaa += algarismos[posicao];
+        if (posicao != 0) {
 
-        if (isSingular){
-            aaa += quant[0];
-        }else{
-            aaa += quant[1];
+            aaa += algarismos[posicao];
+
+            if (posicao != 1) {
+                aaa += (isSingular) ? quant[0] : quant[1];
+            }
+
         }
 
         return aaa;
-    }
-
-    private static void gerarResposta(){
-
-        boolean isMaior = false;
-
-        for (int cont = 0; cont < divResposta.length; cont++){
-
-            if ("0".equals(divNum[cont]) && tamanho != 1){
-                continue;
-            }else{
-
-                if (isMaior){ resposta += " E "; }
-
-                resposta += divResposta[cont];
-            }
-
-            isMaior = true;
-        }
     }
 
     //GERA UM NÚMERO ESCRITO POR EXTENSO EM ATÉ GRUPOS DE 3

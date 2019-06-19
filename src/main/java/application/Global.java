@@ -3,8 +3,8 @@ package application;
 public class Global {
 
     public final static String[] quant = {
-            "ÃO",
-            "ÕES"
+            "AO",
+            "OES"
     };
 
     public final static String[] dezena = {
@@ -60,10 +60,12 @@ public class Global {
     };
 
     public final static String[] algarismos = {
+            "",
             "MIL",
             "MILH",
             "BILH",
             "TRILH",
-            "QUADRILH"
+            "QUADRILH",
+            "QUINTILH"
     };
 }
