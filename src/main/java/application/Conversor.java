@@ -1,6 +1,6 @@
 package application;
 
-import static application.Global.*;
+import static application.Nomes.*;
 
 public class Conversor {
 
@@ -113,7 +113,7 @@ public class Conversor {
         boolean isSingular;
 
         for (int cont = 0; cont < corte; cont++){
-            if (!"0".equals(divNum[cont])){
+            if (!"000".equals(divNum[cont])){
 
                 isSingular = ("1".equals(divNum[cont]));
 
@@ -153,7 +153,11 @@ public class Conversor {
 
                 if (Integer.parseInt(divNum[posicao].substring((divNum[posicao].length() - 3), (divNum[posicao].length() - 2))) == 1){
 
-                    divResposta[posicao] += "CENTO";
+                    if(Integer.parseInt(divNum[posicao]) == 100) {
+                        divResposta[posicao] += alg3[1];
+                    }else{
+                        divResposta[posicao] += "CENTO";
+                    }
 
                 }else {
 

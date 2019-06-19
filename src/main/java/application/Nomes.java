@@ -1,6 +1,6 @@
 package application;
 
-public class Global {
+public class Nomes {
 
     public final static String[] quant = {
             "AO",
@@ -66,6 +66,12 @@ public class Global {
             "BILH",
             "TRILH",
             "QUADRILH",
-            "QUINTILH"
+            "QUINTILH",
+            "SEXTILH",
+            "SEPTILH",
+            "OCTILH",
+            "NONILH",
+            "DECILH",
+            "..."
     };
 }

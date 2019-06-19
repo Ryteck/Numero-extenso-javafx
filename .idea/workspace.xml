@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eb113fa0-c134-43ef-986f-71ddad28a7ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/Conversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Conversor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/Global.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/HomeController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,7 +34,38 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/Conversor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="115" column="45" lean-forward="true" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/Nomes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,9 +90,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/texto/algarismos" />
         <option value="$PROJECT_DIR$/src/main/java/application/Initializer.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/application/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/Conversor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/NumeroNegativoException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/Global.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/Nomes.java" />
       </list>
     </option>
   </component>
@@ -77,7 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,12 +120,28 @@
             <path>
               <item name="Numero-extenso-javafx" type="b2602c69:ProjectViewProjectNode" />
               <item name="Numero-extenso-javafx" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Numero-extenso-javafx" type="b2602c69:ProjectViewProjectNode" />
               <item name="Numero-extenso-javafx" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Numero-extenso-javafx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Numero-extenso-javafx" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Numero-extenso-javafx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Numero-extenso-javafx" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Numero-extenso-javafx" type="b2602c69:ProjectViewProjectNode" />
@@ -103,7 +151,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,9 +266,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13496144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13646056" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -229,15 +278,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.04032258" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38978493" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.37012264" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38907468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32998884" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32795697" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3277592" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50064266" side_tool="true" weight="0.3293011" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32998884" />
-      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.4993573" weight="0.20967741" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.4993573" weight="0.27647716" />
       <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3293011" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -255,27 +304,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/application/Conversor.java</url>
-          <line>119</line>
+          <line>115</line>
           <properties />
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/application/Conversor.java</url>
-          <line>138</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/application/Conversor.java</url>
-          <line>126</line>
-          <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/application/Conversor.java</url>
-          <line>114</line>
-          <properties />
-          <option name="timeStamp" value="62" />
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -331,34 +362,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Object.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Object.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/NumeroNegativoException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/Conversor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        <state relative-caret-position="168">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/application/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="48">
+          <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/Global.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/Conversor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="248">
+          <caret line="115" column="45" lean-forward="true" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/Nomes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
         </state>
       </provider>
     </entry>
