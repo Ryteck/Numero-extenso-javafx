@@ -124,19 +124,21 @@ public class Conversor {
     }
 
     private static String receberPosicao(int posicao, boolean isSingular){
-        String aaa = "";
+        String retorno = "";
 
         if (posicao != 0) {
 
-            aaa += algarismos[posicao];
+            if (posicao >= algarismos.length){ posicao = algarismos.length - 1; }
+
+            retorno += algarismos[posicao];
 
             if (posicao != 1) {
-                aaa += (isSingular) ? quant[0] : quant[1];
+                retorno += (isSingular) ? quant[0] : quant[1];
             }
 
         }
 
-        return aaa;
+        return retorno;
     }
 
     //GERA UM NÚMERO ESCRITO POR EXTENSO EM ATÉ GRUPOS DE 3

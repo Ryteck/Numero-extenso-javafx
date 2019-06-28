@@ -1,13 +1,79 @@
 package application;
 
+import java.io.*;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Nomes {
 
-    public final static String[] quant = {
+    public static void config(){
+
+        String line;
+        List<String> text = new ArrayList<>();
+
+        text.add("");
+
+        try (BufferedReader br = new BufferedReader(new FileReader("./text/alga.txt"))) {
+            while ((line = br.readLine()) != null) {
+                text.add(line);
+            }
+            algarismos = text.toArray(new String[0]);
+        } catch (FileNotFoundException e) {
+            novoText();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void novoText(){
+        new File("./text").mkdir();
+        new File("./text/alga.txt");
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("./text/alga.txt", false))){
+            bw.write(getText());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        config();
+    }
+
+    private static String getText(){
+        String retorno;
+
+        retorno = "MIL\n" +
+                "MILH\n" +
+                "BILH\n" +
+                "TRILH\n" +
+                "QUADRILH\n" +
+                "QUINTILH\n" +
+                "SEXTILH\n" +
+                "SEPTILH\n" +
+                "OCTILH\n" +
+                "NONILH\n" +
+                "DECILH\n" +
+                "UNDECILH\n" +
+                "DUODECILH\n" +
+                "TREDECILH\n" +
+                "QUATTUORDECILH\n" +
+                "QUINDECILH\n" +
+                "SEXDECILH\n" +
+                "SEPTENDECILH\n" +
+                "OCTODECILH\n" +
+                "NOVENDECILH\n" +
+                "VIGINTILH\n" +
+                "...";
+
+        return retorno;
+    }
+
+    public static String[] quant = {
             "AO",
             "OES"
     };
 
-    public final static String[] dezena = {
+    public static String[] dezena = {
             "DEZ",
             "ONZE",
             "DOZE",
@@ -20,7 +86,7 @@ public class Nomes {
             "DEZENOVE"
     };
 
-    public final static String[] alg1 = {
+    public static String[] alg1 = {
             "ZERO",
             "UM",
             "DOIS",
@@ -33,7 +99,7 @@ public class Nomes {
             "NOVE"
     };
 
-    public final static String[] alg2 = {
+    public static String[] alg2 = {
             "",
             "",
             "VINTE",
@@ -46,7 +112,7 @@ public class Nomes {
             "NOVENTA"
     };
 
-    public final static String[] alg3 = {
+    public static String[] alg3 = {
             "",
             "CEM",
             "DUZENTOS",
@@ -59,19 +125,5 @@ public class Nomes {
             "NOVECENTOS"
     };
 
-    public final static String[] algarismos = {
-            "",
-            "MIL",
-            "MILH",
-            "BILH",
-            "TRILH",
-            "QUADRILH",
-            "QUINTILH",
-            "SEXTILH",
-            "SEPTILH",
-            "OCTILH",
-            "NONILH",
-            "DECILH",
-            "..."
-    };
+    public static String[] algarismos;
 }

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextArea?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="backcolor" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
    <children>
-      <JFXTextField fx:id="inteiro" focusColor="#64fc97" layoutX="141.0" layoutY="22.0" prefHeight="25.0" prefWidth="320.0" styleClass="texto_white" />
-      <JFXButton layoutX="210.0" layoutY="95.0" onAction="#converter" prefHeight="50.0" prefWidth="182.0" ripplerFill="#24ffd2" style="-fx-border-color: #24ffd2; -fx-border-radius: 25; -fx-background-radius: 25;" text="Converter" textFill="WHITE" AnchorPane.topAnchor="95.0" />
+      <JFXTextField fx:id="inteiro" focusColor="#64fc97" layoutX="140.0" layoutY="74.0" onKeyPressed="#salvaAnterior" onKeyReleased="#converter" prefHeight="25.0" prefWidth="320.0" styleClass="texto_white" />
       <JFXTextArea fx:id="txtResposta" editable="false" focusColor="#64fc97" layoutX="38.0" layoutY="211.0" prefHeight="175.0" prefWidth="525.0" styleClass="texto_white" />
    </children>
 </AnchorPane>
