@@ -14,18 +14,13 @@ public class HomeController {
 
     private String resposta;
 
-    private String respotaAnterior;
+    private String respostaCorreta;
 
     @FXML
     private JFXTextField inteiro;
 
     @FXML
     private JFXTextArea txtResposta;
-
-    @FXML
-    private void salvaAnterior(){
-        respotaAnterior = inteiro.getText();
-    }
 
     @FXML
     private void converter(){
@@ -55,11 +50,14 @@ public class HomeController {
             }
 
         }
+        else{ converter(); }
 
     }
 
     //TESTA OS VALORES INSERIDOS PARA QUE SEJAM APENAS NÚMEROS
     private Boolean isNum(){
+
+        respostaCorreta = "";
 
         String negativa = "-";
 
@@ -76,6 +74,7 @@ public class HomeController {
             if (i == 0){
                 if (neg == c[i]){
                     isNegativo = true;
+                    respostaCorreta += "-";
                     continue;
                 }else{
                     isNegativo = false;
@@ -84,13 +83,14 @@ public class HomeController {
 
             if (!Character.isDigit(c[i])){
                 b = true;
-                break;
+                continue;
             }
+            respostaCorreta += c[i];
         }
 
         if (b) {
             JOptionPane.showMessageDialog(null, "Formato Invalido");
-            inteiro.setText(respotaAnterior);
+            inteiro.setText(respostaCorreta);
             inteiro.selectRange(inteiro.getLength(), inteiro.getLength());
             return false;
         }

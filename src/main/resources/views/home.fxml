@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="backcolor" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
    <children>
-      <JFXTextField fx:id="inteiro" focusColor="#64fc97" layoutX="140.0" layoutY="74.0" onKeyPressed="#salvaAnterior" onKeyReleased="#converter" prefHeight="25.0" prefWidth="320.0" styleClass="texto_white" />
+      <JFXTextField fx:id="inteiro" focusColor="#64fc97" layoutX="140.0" layoutY="74.0" onKeyReleased="#converter" prefHeight="25.0" prefWidth="320.0" styleClass="texto_white" />
       <JFXTextArea fx:id="txtResposta" editable="false" focusColor="#64fc97" layoutX="38.0" layoutY="211.0" prefHeight="175.0" prefWidth="525.0" styleClass="texto_white" />
    </children>
 </AnchorPane>
